@@ -30,6 +30,8 @@ function App() {
   return (
      
     <S.HomeContainer>
+      
+      <h1>Digite seu usuário do GitHub</h1>
       <S.Content>    
         <S.Input className="usuarioInput" placeholder="Usuário" value={usuario} onChange={e => setUsuario(e.target.value)} />
         <S.Button type="button" onClick={handlePesquisa}>Pesquisar</S.Button>
