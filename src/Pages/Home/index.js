@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import * as S from './styled';
 import { useHistory } from 'react-router-dom';
+import Logo from '../../components/GitHub-Logo.png'
 
 function App() {
 
@@ -31,10 +32,12 @@ function App() {
      
     <S.HomeContainer>
       
+      <S.ImgLogo src={Logo}></S.ImgLogo>
+        
       <h1>Digite seu usuário do GitHub</h1>
       <S.Content>    
         <S.Input className="usuarioInput" placeholder="Usuário" value={usuario} onChange={e => setUsuario(e.target.value)} />
-        <S.Button type="button" onClick={handlePesquisa}>Pesquisar</S.Button>
+        <S.Button type="button" onClick={handlePesquisa}>Pesquisar</S.Button>      
       </S.Content>
      
       { erro ? <S.ErrorMsg>Ocorreu um erro. Tente novamente</S.ErrorMsg> : '' }

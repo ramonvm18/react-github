@@ -9,6 +9,13 @@ align-items: center;
 justify-content: center;
 `
 
+export const ImgLogo = styled.img`
+max-width:200px;
+max-height:150px;
+width: auto;
+height: auto;
+`
+
 export const Content = styled.div`
 
 width: 100vw;
